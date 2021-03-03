@@ -1,14 +1,7 @@
-export default async (fast) => {
-  // console.log(__dirname);
-  const sequelizeConfig = {
-    instance: "sequelize", // the name of fastify plugin instance.
-    autoConnect: true, // auto authentication and test connection on first run
+// const { resolve, dirname } = require("path");
+// const { fileURLToPath } = require("url");
+const { Sequelize } = require("sequelize");
+const sequelize = new Sequelize("sqlite::memory:");
+// const path = require("path");
 
-    // other sequelize config goes here
-    dialect: "sqlite",
-
-    // SQLite only
-    storage: await import("./db.sqlite"),
-  };
-  fast.register(import("fastify-sequelize"), sequelizeConfig);
-};
+module.exports = sequelize;

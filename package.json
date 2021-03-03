@@ -3,7 +3,6 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-  "type": "module",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node index.js",
@@ -23,10 +22,12 @@
     "dotenv": "^8.2.0",
     "fastify": "^3.11.0",
     "fastify-sequelize": "^1.0.4",
+    "fastify-sequelizejs": "^1.6.0",
     "npm": "^7.5.3",
     "pg": "^8.5.1",
     "pg-hstore": "^2.3.3",
     "sequelize": "^6.5.0",
+    "sequelize-fastify": "^1.0.5",
     "sqlite3": "^5.0.0"
   },
   "devDependencies": {
